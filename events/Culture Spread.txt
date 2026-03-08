@@ -1,0 +1,259 @@
+namespace = culture_spread
+
+province_event = {
+	id = culture_spread.1
+	title = "culture_spread_title"
+	desc = "culture_spread_desc"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	goto = ROOT
+	fire_only_once = no
+		
+
+
+	trigger = {
+		has_owner_culture = no
+		OR = {
+			has_owner_accepted_culture = no
+			is_year = 1650
+		}
+		religion_group = owner
+		controlled_by = owner
+
+		any_neighbor_province = {
+			owned_by = prev
+			has_owner_culture = yes
+		}
+
+		NOT = {
+			OR = {
+				#prevent india and china from being converted
+				culture_group = east_asian
+				culture_group = hindusthani
+				culture_group = eastern_aryan
+				culture_group = dravidian
+				culture_group = western_aryan
+				culture_group = central_indic
+
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 30
+
+		###IDEAS###
+		modifier = {
+			factor = 4
+			AND = {
+				owner = { has_idea_group = humanist_ideas }
+			}
+		}
+
+		modifier = {
+			factor = 0.9
+			AND = {
+				owner = { has_idea_group = expansion_ideas }
+			}	
+		}
+
+		###RELIGION###
+		modifier = {
+			factor = 2
+			AND = {
+				religion_group = owner
+				NOT = { has_owner_religion = no }
+			}
+		}
+
+
+
+		###COLONIAL REGIONS###
+		modifier = {
+			factor = 0.5
+			#make colonial america convert faster
+			OR = {
+				culture_group = apachean
+				culture_group = araucanian
+				culture_group = aridoamerican
+				culture_group = aboriginal_australian
+				culture_group = central_algonquian
+				culture_group = eastern_algonquian
+				culture_group = iroquoian
+				culture_group = muskogean
+				culture_group = plains_algonquian
+				culture_group = siouan
+				culture_group = sonoran
+			}
+		}
+	}
+
+	option = {
+		name = "spread_culture_yes"
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				#make ai not culture convert if they have humanist ideas
+				factor = 0
+				owner = { has_idea_group = humanist_ideas }
+			}
+		}
+		change_culture = owner
+		
+	}
+	option = {
+		name = "spread_culture_no"
+
+		ai_chance = {
+			factor = 20
+
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { has_idea_group = humanist_ideas }
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = culture_spread.2
+	title = "rus_culture_spread_title"
+	desc = "rus_culture_spread_desc"
+	picture = CONQUEST_eventPicture
+
+	goto = ROOT
+	fire_only_once = no
+
+	trigger = {
+		OR = {
+			owner = { tag = PLC } 
+			owner = { tag = RUS }
+		}
+
+		OR = {
+			culture_group = tartar
+			culture_group = finno_ugric
+		}
+
+		religion = owner
+		OR = {
+			region = crimea_region
+			region = ruthenia_region
+			region = ural_region
+			region = central_asia_region
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 25
+		modifier = {
+			factor = 1.5
+			owned_by = PLC
+		}
+	}
+
+	option = {
+		name = "spread_russian"
+		trigger = {
+			OR = {
+				owned_by = RUS
+				region = ural_region
+			}
+			NOT = { region = crimea_region }
+		}
+		change_culture = russian
+	}
+
+	option = {
+		name = "spread_ruthenian"
+		trigger = {
+			OR = {
+				region = crimea_region
+				owned_by = PLC
+			}
+			NOT = { region = ural_region }
+		}
+		change_culture = ruthenian
+	}
+}
+
+country_event = {
+	id = culture_spread.3
+	title = "scandi_culture_unify_title"
+	desc = "scandi_culture_unify_desc"
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = { tag = SCA }
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "unify_scandi"
+		custom_tooltip = "unify_scandi_tooltip"
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture = swedish
+					culture = norwegian
+					culture = danish
+					culture = icelandic
+					culture = finnish
+					culture = estonian
+					culture = latvian
+				}
+			}
+			change_culture = scandinavian_unified
+		}
+		change_primary_culture = scandinavian_unified
+		set_ruler_culture = scandinavian_unified
+		set_heir_culture = scandinavian_unified
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "dont_unify_scandi"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+
+	province_event = {
+	id = culture_spread.4
+	title = "rum_culture_spread_t"
+	desc = "rum_culture_spread_d"
+	picture = CONQUEST_eventPicture
+
+	goto = ROOT
+	fire_only_once = no
+
+	trigger = {
+		owner = { tag = RUM }
+
+		
+		region = anatolia_region
+		has_owner_culture = no
+	}
+
+	mean_time_to_happen = {
+		years = 15
+	}
+
+	option = {
+		name = "spread_ruman"
+		change_culture = ruman
+	}
+}
+
+
+	
+

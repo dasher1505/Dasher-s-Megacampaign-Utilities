@@ -1,0 +1,33 @@
+﻿l_english:
+ culture_spread_title:0 "Province Converted"
+ culture_spread_desc:0 "Inspired by the customs and traditions of our people, $PROVINCENAME$ has begun to adopt our culture."
+ spread_culture_yes:0 "Let our culture grow."
+ spread_culture_no:0 "Differences will only make us stronger."
+
+
+
+	rus_culture_spread_title:0 "Border Province Converted"
+	rus_culture_spread_desc:0 "$PROVINCENAME$, a land on the frontier of our nation, has begun to adopt our ways."
+	spread_russian:0 "Allow the Russians to take control."
+  spread_ruthenian:0 "The Ruthenians shall make it their home."
+		
+ scandi_culture_unify_title:0 "The Unification of Scandinavian Cultures"
+ scandi_culture_unify_desc:0 "For centuries, the peoples of the North have shared more than cold winds and restless seas. From the fjords of Norway to the forests of Sweden, from the plains of Denmark to the distant settlements across the Baltic, their tongues are kin, their laws familiar, and their gods once the same. Yet where there might have been unity, there has instead been rivalry, suspicion, and war. Now, the tides of history shift. Through crown, council, or conquest, the barriers that divided the Scandinavian peoples have begun to fade. Traders travel freely, nobles swear fealty to a single authority, and the common folk speak of themselves not as Danes, Norwegians, or Swedes alone, but as something greater. If this unity is to endure, it must be recognized not merely in banners and borders, but in identity itself. The North may yet stand as one, stronger together than it ever was apart."
+
+ unify_scandi:0 "One crown, one people."
+ dont_unify_scandi:0 "Can't we convince them to just go home?"
+ scandinavian_unified:0 "Scandinavian"
+ unify_scandi_tooltip:0 "Merge the disparate Nordic cultures into a unified Scandinavian culture."
+
+
+ ruman:0 "Ruman"
+ rum_culture_spread_t:0 "Rise of the Ruman culture"
+ rum_culture_spread_d:0 "The failure of our nation to Turkify the region of Anatolia has caused the Turkish peoples of old to begin adopting distinctly Byzantine traditions. They speak Turkish, yet adopt the customs of the Romans of old... as a continuation of the Roman Empire, it is only right."
+
+ spread_ruman:0 "Glorious."
+
+ rum1_t:0 "A change in course?"
+ rum1_d:0 "Recently, the regents of Rum have been in discussion. We claim the mantle of Rome, yet we ourselves aren't Roman. There has been a slow merging of Turkish and Byzantine cultures, into some newfound Ruman culture. Perhaps we should adopt it, and see where it takes us?"
+
+ become_ruman:0 "We are the TRUE heirs to Rome!"
+ stay_turkish:0 "Hasn't some other guy already taken the 'become Rome in a megacampaign' bit?"

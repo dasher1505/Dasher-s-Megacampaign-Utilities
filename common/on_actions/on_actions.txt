@@ -1,0 +1,6 @@
+on_startup = {
+	events = {
+		occitania_rise.1
+		rum.1
+	}
+}

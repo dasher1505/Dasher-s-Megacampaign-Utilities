@@ -1,0 +1,38 @@
+namespace = rum
+country_event = {
+	id = rum.1
+	title = "rum1_t"
+	desc = "rum1_d"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	goto = ROOT
+		
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag=RUM
+	}
+
+	option = {
+		name = "become_ruman"
+
+		every_owned_province = {
+			limit = {
+				culture = turkish
+			}
+			change_culture = ruman
+		}
+		change_primary_culture = ruman
+		set_ruler_culture = ruman
+		set_heir_culture = ruman
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "stay_turkish"
+	}
+}

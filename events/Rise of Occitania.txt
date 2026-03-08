@@ -1,0 +1,32 @@
+namespace = occitania_rise
+country_event = {
+	id = occitania_rise.1
+	title = "occitania_rise1_t"
+	desc = "occitania_rise1_d"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	goto = ROOT
+		
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag=GUY
+	}
+
+	option = {
+		name = "war_france"
+		declare_war_with_cb = {
+			casus_belli = cb_restore_personal_union
+			who = FRA
+		}
+
+	}
+	option = {
+		name = "peace_france"
+	}
+	
+
+
+}
