@@ -7,7 +7,7 @@
 
 
  rum_buff_t:0 "Return of Meliksah?"
- rum_desc_t:0 "Recently, a man claiming lineage all the way back to Alp Arslan himself has appeared at court. He bore a striking resemblence to the late Sokmen Seljuk, the ruler of Paphlagonia. This man has sworn to loyally follow the regency council and the leaders thereafter, no matter what. This comes in spite of his Shiite religion.../nSome are saying that we cannot afford to trust such a character, but our house has been worringly decadent, and we've had a shortage of skilled generals. Can we afford to miss such a man?"
+ rum_buff_d:0 "Recently, a man claiming lineage all the way back to Alp Arslan himself has appeared at court. He bore a striking resemblence to the late Sokmen Seljuk, the ruler of Paphlagonia. This man has sworn to loyally follow the regency council and the leaders thereafter, no matter what. This comes in spite of his Shiite religion.../nSome are saying that we cannot afford to trust such a character, but our house has been worringly decadent, and we've had a shortage of skilled generals. Can we afford to miss such a man?"
 
  meliksah_return:0 "We need him!"
  meliksah_return_tooltip:0 "We will acquire a skilled general, and a new ruler. This may have consequences decades into the future..."
@@ -23,6 +23,15 @@
  bad_tidings_tooltip:0 "A chunk of our Sunni provinces have revealed their true allegiance, to the Shia faith!"
  
 
+
+
+ become_shia:0 "Faith is malleable, our lives are not."
+ become_shia_tooltip:0 "Sunni rebels will be greatly unhappy. They will rise up, and unrest will spread across all Sunni provinces!"
+
+ shiite_revolt_rum:0 "We will NOT back down to these HERETICS!"
+
+ rum_shiite_rev1_t:0 "The Shia Revolt"
+ rum_shiite_rev1_d:0 "Vestiges of the old Shia Caliphate, long thought dead, have re-emerged. What was once a peaceful land is now plagued with infighting, as brother fights brother over the matter of religion. The legitimisation of the Shia faith, done via our promotion of the great Meliksah Seljuk, has revealed to be our undoing. Shiite rebels have stormed the gates of various towns, and laid forth their demands. Surrender to the true faith... or perish."
 
 
  

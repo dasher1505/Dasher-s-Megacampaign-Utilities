@@ -165,9 +165,91 @@ country_event = {
 					change_religion = shiite
 				}
 			}
+			set_country_flag = shiite_revolution
 			clr_country_flag = shiite_stirrings
 		}
 	}
 	
 }
+
+country_event = {
+	id = rum.5
+	title = "rum_shiite_rev1_t"
+	desc = "rum_shiite_rev1_d"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	goto = ROOT
+		
+
+	fire_only_once = yes
+
+	trigger = {
+		tag=RUM
+		is_date = 1540.1.1
+		has_country_flag = shiite_revolution
+	}
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = "become_shia"
+		custom_tooltip = "become_shia_tooltip"
+		add_stability = -3
+		change_religion = shiite
+		set_ruler_religion = shiite
+		set_heir_religion = shiite
+		every_owned_province = {
+			limit = {
+				religion = sunni
+			}
+			random = {
+				chance = 5
+				spawn_rebels = {
+					type = sunni_rebels
+					size = 2
+					leader = "Sunni Zealot"
+				}
+				add_unrest = 7.5
+			}
+
+		}
+		every_owned_province = {
+			limit = {
+				religion = shiite
+			}
+			add_unrest = -5
+		}
+	}
+
+	option = {
+		name = "shiite_revolt_rum"
+		clr_country_flag = shiite_revolution
+
+		add_stability = -2
+
+		every_owned_province = {
+			limit = {
+				religion = shiite
+			}
+			random = {
+				chance = 10
+				spawn_rebels = {
+					type = shiite_rebels
+					size = 3
+					leader = "Shiite Leader"
+				}
+			}
+			add_unrest = 5
+		}
+		every_owned_province = {
+			limit = {
+				religion = sunni
+			}
+			add_unrest = -5
+		}
+	}
+	
+}
+
 
