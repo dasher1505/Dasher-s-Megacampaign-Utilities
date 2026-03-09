@@ -26,7 +26,72 @@ country_event = {
 	option = {
 		name = "peace_france"
 	}
+}
+
+country_event = {
+	id = occitania_rise.2
+	title = "occitania_seize_france_t"
+	desc = "occitania_seize_france_d"
+
+	picture = WAR_OF_THE_ROSES_eventPicture
+	fire_only_once = yes
+	is_triggered_only = no
+	goto = ROOT
+	trigger = {
+		personal_union = 1
+		tag = GUY
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 
+	option = {
+		name = "claim_france"
+		custom_tooltip = "claim_france_tooltip"
+		hidden_effect = {
+			FRA = {
+				every_owned_province = {
+					add_core = GUY
+				}
+			}
+			normandy_area = {
+				add_core = GUY
+			}
+			orleans_area = {
+				add_core = GUY
+			}
+			ile_de_france_area = {
+				add_core = GUY
+			}
+			loire_area = {
+				add_core = GUY
+			}
+			brittany_area = {
+				add_claim = GUY
+			}
+		}
+		
+	}
+}
 
+country_event = {
+	id = occitania_rise.3
+	title = "occitania_capital_t" 
+	desc = "occitania_capital_d"
+
+	picture = CITY_DEVELOPMENT_eventPicture
+	goto = ROOT
+
+	fire_only_once = yes
+	trigger = {
+		is_date = 1500.1.1
+	}
+
+	option = {
+		name = "develop_guy_capital"
+		capital_scope = {
+			add_random_development = 10
+		}
+	}
 }

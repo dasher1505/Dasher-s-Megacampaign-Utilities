@@ -7,5 +7,19 @@
  peace_france:0 "Maybe it's for the best we give up..."
 
 
+ occitania_capital_t:0 "The Burgeoning Capital"
+ occitania_capital_d:0 "With the centralization of the Occitanian region around our rule, we have seen more and more people flock from the northern Occitanian cities, such as Paris and Calais, to our capital in Bordeaux. The city itself has become a burgeoning center for arts and commerce, and it seems set to become one of the greatest cities of Europe."
+
+ develop_guy_capital:0 "This can only be a good thing!"
+
+
+
+ occitania_seize_france_t:0 "Consolidating our Grip"
+ occitania_seize_france_d:0 "We've done it! By claiming the French throne, we have secured a claim to the entirety of what shall now be called North Occitania! Despite the persistence of the Normans within England, we can now claim true hegemony over our northern brethren. We must now kick them out of our lands, and truly reclaim the throne of France for ourselves!"
+
+ claim_france:0 "Onwards, to victory!"
+ claim_france_tooltip:0 "We will gain cores across France!"
+
+
 
  

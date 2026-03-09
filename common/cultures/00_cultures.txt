@@ -3970,26 +3970,26 @@ iranian	= {
 		province = { local_has_qizilbash = yes }
 		primary = RUM
 		dynasty_names = {
-			"Komnenoğlu", "Paleoloğlu", "Laskaroğlu", "Dukaszade", "Angelzade", 
-			"Kantakuzenoğlu", "Vatatzade", "Melissenoğlu", "Karahanoğlu", "Gazioğlu", 
-			"Alpzade", "Demirhan", "Arslanoğlu", "Kutluoğlu", "Aydinoğlu", "Timurhanli", 
-			"Bozdoğanli", "Yildirimzade", "Konyalioğlu", "Kayserili", "Karamanli", 
-			"Sivasoğlu", "Tokatli", "Amasyali", "Niğdeli", "Rumelioğlu", "Konstantinoğlu", 
-			"Basileioğlu", "Aleksandroğlu", "Nikazade", "Teodoroğlu", "Manueloğlu", 
-			"Andronikoğlu", "Selçukoğlu", "Rumhanli", "Kayserzade", "Devlethanli", 
-			"Sultanhanli", "Taçzade"
+			"Komnenoglu", "Paleologlu", "Laskaroglu", "Dukaszade", "Angelzade", 
+			"Kantakuzenoglu", "Vatatzade", "Melissenoglu", "Karahanoglu", "Gazioglu", 
+			"Alpzade", "Demirhan", "Arslanoğlu", "Kutluoglu", "Aydinoglu", "Timurhanli", 
+			"Bozdoganli", "Yildirimzade", "Konyalioglu", "Kayserili", "Karamanli", 
+			"Sivasoglu", "Tokatli", "Amasyali", "Niğdeli", "Rumelioglu", "Konstantinoglu", 
+			"Basileioglu", "Aleksandroglu", "Nikazade", "Teodoroglu", "Manueloglu", 
+			"Andronikoglu", "Selçukoglu", "Rumhanli", "Kayserzade", "Devlethanli", 
+			"Sultanhanli", "Taczade"
 		}
 		male_names = {
 			"Mehmed", "Ahmed", "Murad", "Selim", "Süleyman", "Bayezid",
-			"Osman", "Orhan", "Mustafa", "Mahmud", "İbrahim", "Yakub",
-			"İskender", "İlyas", "İdris", "Sinan", "Kemal", "Kemaleddin",
-			"Nizameddin", "Alaeddin", "Fahreddin", "Şemseddin", "Taceddin", "Saadeddin",
-			"Mesud", "Mesudhan", "Kiliç", "Kiliçarslan", "Arslan", "Alparslan",
-			"Tuğrul", "Tuğrulhan", "Sancar", "Kutalmiş", "Melik", "Melikşah",
+			"Osman", "Orhan", "Mustafa", "Mahmud", "Ibrahim", "Yakub",
+			"Iskender", "Ilyas", "Idris", "Sinan", "Kemal", "Kemaleddin",
+			"Nizameddin", "Alaeddin", "Fahreddin", "Semseddin", "Taceddin", "Saadeddin",
+			"Mesud", "Mesudhan", "Kilic", "Kilicarslan", "Arslan", "Alparslan",
+			"Tugrul", "Tugrulhan", "Sancar", "Kutalmis", "Melik", "Meliksah",
 			"Emir", "Togan", "Timur", "Timurhan", "Ayaz", "Turgut",
 			"Ertuğrul", "Doğan", "Yunus", "Hamza", "Halil", "Hizir",
-			"Yahya", "Selman", "Ferhad", "Rüstem", "Piri", "Hüsrev",
-			"Keykavus", "Keykubad", "Keyhüsrev"
+			"Yahya", "Selman", "Ferhad", "Rustem", "Piri", "Hüsrev",
+			"Keykavus", "Keykubad", "Keyhusrev"
 		}
 		female_names = {
 			"Ayşe", "Fatma", "Hatice", "Emine", "Zeynep", "Meryem",

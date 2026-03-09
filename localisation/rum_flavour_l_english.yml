@@ -1,0 +1,28 @@
+﻿l_english:
+ rum2_t:0 "A Dynasty Once United"
+ rum2_d:0 "Centuries ago, we of the Seljuk's were once a unified house, led by one monarch. However, the divergence between our Ruman peoples and the Persian realm has grown ever starker. As the years go by, our closeness to the Seljuks of old grows ever dimmer. However, some at the court at clamouring for a reclamation of our second homeland. Persia."
+ pursue_house_unity:0 "Unify the house!"
+ no_house_unity:0 "The Persian realm will never be ours again..."
+ house_unity_tooltip:0 "We will gain cores on all of Persia, but the Persian Seljuks will gain cores on Anatolia. An offensive war will immediately be declared. Be wary of their allies."
+
+
+ rum_buff_t:0 "Return of Meliksah?"
+ rum_desc_t:0 "Recently, a man claiming lineage all the way back to Alp Arslan himself has appeared at court. He bore a striking resemblence to the late Sokmen Seljuk, the ruler of Paphlagonia. This man has sworn to loyally follow the regency council and the leaders thereafter, no matter what. This comes in spite of his Shiite religion.../nSome are saying that we cannot afford to trust such a character, but our house has been worringly decadent, and we've had a shortage of skilled generals. Can we afford to miss such a man?"
+
+ meliksah_return:0 "We need him!"
+ meliksah_return_tooltip:0 "We will acquire a skilled general, and a new ruler. This may have consequences decades into the future..."
+
+ no_return:0 "We can't afford to trust this man!"
+
+
+
+ rum_shiite_rev_t:0 "Whispers of the Shia"
+ rum_shiite_rev_d:0 "Since our conquest of the former heart of the Shia Caliphate, there has been an eery harmony over our realm. Despite the fact there should be many shiites infesting our nation, none has shown their face... until now. With the recent leadership of Meliksah Seljuk, the legitimacy of the religion has been given new colours. Shiites rise out of the woodworks, in places we believed to be Sunni!"
+
+ bad_tidings:0 "At least they aren't upset..."
+ bad_tidings_tooltip:0 "A chunk of our Sunni provinces have revealed their true allegiance, to the Shia faith!"
+ 
+
+
+
+ 

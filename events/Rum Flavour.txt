@@ -17,7 +17,7 @@ country_event = {
 
 	option = {
 		name = "become_ruman"
-
+		add_core = 151
 		every_owned_province = {
 			limit = {
 				culture = turkish
@@ -27,6 +27,14 @@ country_event = {
 		change_primary_culture = ruman
 		set_ruler_culture = ruman
 		set_heir_culture = ruman
+		define_ruler = {
+			name = "Bayezid"
+			dynasty = "Seljuk"
+			adm = 5
+			dip = 1
+			mil = 4
+			age = 65
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -34,5 +42,132 @@ country_event = {
 
 	option = {
 		name = "stay_turkish"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
+
+country_event = {
+		id = rum.2
+	title = "rum2_t"
+	desc = "rum2_d"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	goto = ROOT
+		
+
+	fire_only_once = yes
+
+	trigger = {
+		tag=RUM
+		is_date = 1600.1.1
+	}
+	mean_time_to_happen = {
+		years = 25
+		modifier = {
+			factor = 0.5
+			is_date = 1625.1.1
+		}
+		modifier = {
+			factor = 0.25
+			is_date = 1640.1.1
+		}
+	}
+
+	option = {
+		name = pursue_house_unity
+		custom_tooltip = house_unity_tooltip
+		hidden_effect = {
+			persia_region = {
+				add_core = RUM
+			}
+			anatolia_region = {
+				add_core = PER
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_core
+				who = PER
+			}
+		}
+	}
+	option = {
+		name = no_house_unity
+	}
+}
+
+country_event = {
+	id = rum.3
+	title = "rum_buff_t"
+	desc = "rum_buff_d"
+	
+	fire_only_once = yes
+	goto = ROOT
+	trigger = {
+		tag = RUM
+		RUM = {
+			owns = 151
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "meliksah_return"
+		custom_tooltip = "meliksah_return_tooltip"
+		define_general = {
+			name = "Meliksah Seljuk"
+			fire = 7
+			shock = 9
+			manuever = 5
+			siege = 6
+			trait = inspirational_leader_general_personality
+		}
+		add_army_professionalism = 0.2
+		set_country_flag = shiite_stirrings
+	}
+	option = {
+		name = "no_return"
+	}
+}
+
+country_event = {
+	id = rum.4
+	title = "rum_shiite_rev_t"
+	desc = "rum_shiite_rev_d"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	goto = ROOT
+		
+
+	fire_only_once = yes
+
+	trigger = {
+		tag=RUM
+		is_date = 1500.1.1
+		has_country_flag = shiite_stirrings
+	}
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = "bad_tidings"
+		custom_tooltip = "bad_tidings_tooltip"
+
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				random = {
+					chance = 10
+					change_religion = shiite
+				}
+			}
+			clr_country_flag = shiite_stirrings
+		}
+	}
+	
+}
+

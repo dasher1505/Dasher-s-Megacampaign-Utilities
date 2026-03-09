@@ -42,7 +42,7 @@ province_event = {
 	mean_time_to_happen = {
 		years = 30
 
-		###IDEAS###
+		###IDEA GROUPS###
 		modifier = {
 			factor = 4
 			AND = {
@@ -196,23 +196,26 @@ country_event = {
 	option = {
 		name = "unify_scandi"
 		custom_tooltip = "unify_scandi_tooltip"
-		every_owned_province = {
-			limit = {
-				OR = {
-					culture = swedish
-					culture = norwegian
-					culture = danish
-					culture = icelandic
-					culture = finnish
-					culture = estonian
-					culture = latvian
+		hidden_effect = {
+			
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = swedish
+						culture = norwegian
+						culture = danish
+						culture = icelandic
+						culture = finnish
+						culture = estonian
+						culture = latvian
+					}
 				}
+				change_culture = scandinavian_unified
 			}
-			change_culture = scandinavian_unified
+			change_primary_culture = scandinavian_unified
+			set_ruler_culture = scandinavian_unified
+			set_heir_culture = scandinavian_unified
 		}
-		change_primary_culture = scandinavian_unified
-		set_ruler_culture = scandinavian_unified
-		set_heir_culture = scandinavian_unified
 		ai_chance = {
 			factor = 1
 		}
