@@ -1,0 +1,75 @@
+namespace = breton
+country_event = {
+	id = breton.1
+	title = irish_king_t
+	desc = irish_king_d
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = BRI
+	}
+
+	option = {
+		name = "new_king"
+
+		IRE = {
+			define_ruler = {
+				name = "Duncan"
+				dynasty = "Murchad"
+				mil = 1
+				adm = 2
+				dip = 6
+			}
+			set_country_flag = irish_succession_crisis	
+			add_historical_friend = BRI		
+		}
+		vassalize = IRE
+		capital_scope = {
+			spawn_rebels = {
+			size = 3
+			type = noble_rebels
+			}
+		}
+
+	}
+	option = {
+		name = "no_new_king"
+		add_stability = 1
+		IRE = {
+			capital_scope = {
+				spawn_rebels = {
+					size = 4
+					type = noble_rebels
+				}
+			}
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = breton.2
+	title = irish_succession_t
+	desc = irish_succession_d
+
+	fire_only_once = yes
+	trigger = {
+		tag = BRI
+		is_date = 1460.1.1
+		IRE = {
+			has_country_flag = irish_succession_crisis
+		}
+	}
+	option = {
+		name = "integrate"
+		inherit = IRE
+		add_stability = -1
+	}
+	option = {
+		name = "no_integrate"
+		add_stability = 1
+	}
+	
+}
