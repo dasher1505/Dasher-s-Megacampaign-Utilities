@@ -1,0 +1,13 @@
+﻿l_english:
+ irish_king_t:0 "The Irish Kings"
+ irish_king_d:0 "In our court, debate has been ongoing about whether or not to crown an Irish lord as High King of Ireland. It would certainly strengthen our claim abroad, and is popular amongst the nobility of Ireland. Doing so is deeply unpopular amongst our local populace, however... but long-term, we may be able to inherit all of Ireland if we crown a local ruler, if we force them into a viceroy-esque position."
+
+ new_king:0 "Ireland will eventually be ours!"
+ no_new_king:0 "We musn't upset the nobility in Brittany."
+
+ irish_succession_t:0 "The Irish Succession Crisis"
+ irish_succession_d:0 "The High King of Ireland has fallen into rage. His family, tardy and weak, unfit to rule such a great kingdom as Ireland. His claim to Scotland is but a dream to them. He looks to those who crowned him in Brittany, begging for someone to take up his mantle..."
+ 
+ integrate:0 "Let Ireland and Brittany become one!"
+ no_integrate:0 "This all sounds a bit meddlesome..."
+

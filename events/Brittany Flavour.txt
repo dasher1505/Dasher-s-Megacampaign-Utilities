@@ -24,6 +24,9 @@ country_event = {
 			add_historical_friend = BRI		
 		}
 		vassalize = IRE
+		IRE = {
+			inherit = MUN
+		}
 		capital_scope = {
 			spawn_rebels = {
 			size = 3
@@ -46,9 +49,6 @@ country_event = {
 	}
 }
 
-
-
-
 country_event = {
 	id = breton.2
 	title = irish_succession_t
@@ -66,10 +66,22 @@ country_event = {
 		name = "integrate"
 		inherit = IRE
 		add_stability = -1
+		SCO = {
+			every_owned_province = {
+				add_core = BRI
+			}
+		}
 	}
 	option = {
 		name = "no_integrate"
 		add_stability = 1
+		wales_area = {
+			add_core = IRE
+		}
 	}
 	
 }
+
+
+
+
