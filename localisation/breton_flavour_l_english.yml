@@ -11,3 +11,9 @@
  integrate:0 "Let Ireland and Brittany become one!"
  no_integrate:0 "This all sounds a bit meddlesome..."
 
+
+ claim_england_t:0 "A Breton Claim on England"
+ claim_england_d:0 "With England weakened and internal divisions rife, some among our court argue that now is the perfect moment to press Breton claims across the Channel. Wales, in particular, may be vulnerable to swift action."
+ seize_wales:0 "Seize Wales!"
+ dont_seize_wales:0 "We shall not risk it"
+

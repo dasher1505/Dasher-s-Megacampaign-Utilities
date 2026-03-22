@@ -25,7 +25,7 @@ country_event = {
 		}
 		vassalize = IRE
 		IRE = {
-			inherit = MUN
+			inherit = MCM
 		}
 		capital_scope = {
 			spawn_rebels = {
@@ -71,6 +71,15 @@ country_event = {
 				add_core = BRI
 			}
 		}
+		highlands_area = {
+			add_core = BRI
+		}
+		kingdom_of_the_isles_area = {
+			add_core = BRI
+		}
+		lowlands_area = {
+			add_core = BRI
+		}
 	}
 	option = {
 		name = "no_integrate"
@@ -82,6 +91,33 @@ country_event = {
 	
 }
 
+country_event = {
+	id = breton.3
+	title = "claim_england_t"
+	desc = "claim_england_d"
+
+	fire_only_once = yes
+	trigger = {
+		tag = BRI
+		is_date = 1490.1.1
+	}
+	mean_time_to_happen = {
+		days = 31
+	}
+	option = {
+		name = "seize_wales"
+		235 = {
+			every_province_in_state = {
+				cede_province = BRI
+				add_core = BRI
+			}
+		}
+		add_prestige = 10
+	}
+	option = {
+		name = "dont_seize_wales"
+	}
+}
 
 
 

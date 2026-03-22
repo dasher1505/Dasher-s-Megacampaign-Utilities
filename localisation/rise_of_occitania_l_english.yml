@@ -21,5 +21,23 @@
  claim_france_tooltip:0 "We will gain cores across France!"
 
 
+ new_occitan_king_t:0 "A New Occitan King"
+ new_occitan_king_d:0 "A young scion of our house, Henri de Poitou, has recently gained notoriety for his towering intellect at such a young age. There is whisper amongst many nobles of situating him as heir, to secure the future of our realm in face of the threats we face both internally and externally. This whispering has reached the King in the form of a petition. Should we accept him, or not?"
+ accept_occitan_king:0 "Accept the Boy"
+ decline_occitan_king:0 "Decline His Claim"
+
+ new_general_t:0 "A Promising General"
+ new_general_d:0 "A talented military leader has risen through the ranks, displaying exceptional skill and leadership. His skills, honed by decades of war against England, Genoa, and the various Germanic counties make him a force to be reckoned with."
+ new_general:0 "Appoint the General"
+
+
+
+ change_name_aquitaine_title:0 "(Cosmetic) Change Nation Name to Aquitaine"
+ change_name_aquitaine_desc:0 "Change the nation name back to Aquitaine."
+
+ AQT:0 "Aquitaine"
+ AQT_ADJ:0 "Aquitanian"
+
+
 
  

@@ -1,0 +1,19 @@
+country_decisions = {
+	change_name_aquitaine = {	
+		potential = {
+			ai = no
+			tag = FRA
+			NOT = { has_country_flag = changed_name_aquitaine}
+		}
+		allow = {
+			stability = 2
+		}
+		effect = {
+			override_country_name = AQT
+			set_country_flag = changed_name_aquitaine
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
