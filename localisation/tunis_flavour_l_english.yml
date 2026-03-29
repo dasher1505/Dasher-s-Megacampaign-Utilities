@@ -2,3 +2,13 @@
  tunis_growth_t:0 "Growth of Tunis"
  tunis_growth_d:0 "The city of Tunis is flourishing, with increasing trade and prosperity. Investing in its development could strengthen our realm significantly."
  develop_tunis:0 "Invest in the Growth of Tunis"
+ tunis_integrate_gra_t:0 "The Fate of Granada"
+ tunis_intergate_gra_d:0 "Once the last bastion of Al-Andalus, Granada has long stood as a symbol of resilience against the Christian kingdoms of Iberia. Now, under the protection and influence of Tunis, its future lies in our hands. The court debates whether to fully integrate Granada into our realm, uniting our peoples under one banner, or to preserve its legacy as a distinct entity. Absorbing Granada would strengthen our power across the western Mediterranean, but it may also erase the last echoes of its proud independence."
+
+ integrate_gra:0 "Granada shall be fully integrated into Tunis."
+
+ change_name_andalusia_title:0 "(Cosmetic) Change Nation Name to Najjarids"
+ change_name_andalusia_desc:0 "Change the nation name back to the Najjarids."
+
+ NJR:0 "Najjarids"
+ NJR_ADJ:0 "Najjarid"

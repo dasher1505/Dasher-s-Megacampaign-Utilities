@@ -106,11 +106,21 @@ country_event = {
 	}
 	option = {
 		name = "seize_wales"
-		235 = {
-			every_province_in_state = {
-				cede_province = BRI
-				add_core = BRI
-			}
+		242 = {
+			cede_province = BRI
+			add_core = BRI
+		}
+		4369 = {
+			cede_province = BRI
+			add_core = BRI
+		}
+		4366 = {
+			cede_province = BRI
+			add_core = BRI
+		}
+		241 = {
+			cede_province = BRI
+			add_core = BRI
 		}
 		add_prestige = 10
 	}
@@ -118,6 +128,4 @@ country_event = {
 		name = "dont_seize_wales"
 	}
 }
-
-
 

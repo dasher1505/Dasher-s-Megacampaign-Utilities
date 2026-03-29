@@ -1,0 +1,19 @@
+country_decisions = {
+	change_name_andalusia = {	
+		potential = {
+			ai = no
+			tag = ADU
+			NOT = { has_country_flag = changed_name_andalusia}
+		}
+		allow = {
+			stability = 1
+		}
+		effect = {
+			override_country_name = NJR
+			set_country_flag = changed_name_andalusia
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
