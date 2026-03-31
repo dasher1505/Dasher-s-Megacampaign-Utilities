@@ -14,8 +14,15 @@ province_event = {
 	trigger = {
 		has_owner_culture = no
 		OR = {
-			has_owner_accepted_culture = no
-			is_year = 1650
+			OR = {
+				#if year >=1650, then we can spread culture to accepted culture provinces
+				#prevents AI gatekeeping itself too hard whilst ensuring minority cultures
+				#exist in Vic3
+				has_owner_accepted_culture = no
+				is_year = 1650
+			}
+			#ensure colonial conversion
+			owner = { is_colonial_nation = yes }
 		}
 		religion_group = owner
 		controlled_by = owner
@@ -51,10 +58,17 @@ province_event = {
 		}
 
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			AND = {
 				owner = { has_idea_group = expansion_ideas }
 			}	
+		}
+
+		modifier = {
+			factor = 0.9
+			AND = {
+				owner = { has_idea_group = exploration_ideas }
+			}
 		}
 
 		###RELIGION###
@@ -70,7 +84,7 @@ province_event = {
 
 		###COLONIAL REGIONS###
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			#make colonial america convert faster
 			OR = {
 				culture_group = apachean
@@ -84,9 +98,11 @@ province_event = {
 				culture_group = plains_algonquian
 				culture_group = siouan
 				culture_group = sonoran
+				culture_group = central_american
 			}
 		}
 	}
+	
 
 	option = {
 		name = "spread_culture_yes"
@@ -99,8 +115,23 @@ province_event = {
 				factor = 0
 				owner = { has_idea_group = humanist_ideas }
 			}
+			modifier = {
+				#makes colonies ALWAYS culture convert
+				factor = 100
+				owner = { is_colonial_nation = yes }
+			}
 		}
+
 		change_culture = owner
+		if = {
+			limit = {
+				owner = { is_colonial_nation = yes }
+				NOT = {
+					religion = owner
+				}
+			}
+			change_religion = owner
+		}
 		
 	}
 	option = {
@@ -112,7 +143,10 @@ province_event = {
 			modifier = {
 				factor = 0
 				owner = {
-					NOT = { has_idea_group = humanist_ideas }
+					OR = {
+						NOT = { has_idea_group = humanist_ideas }
+						is_colonial_nation = yes
+					}
 				}
 			}
 		}
@@ -241,6 +275,9 @@ country_event = {
 
 	trigger = {
 		owner = { tag = RUM }
+		NOT = {
+			is_date = 1550.1.1
+		}
 
 		
 		region = anatolia_region
@@ -256,7 +293,3 @@ country_event = {
 		change_culture = ruman
 	}
 }
-
-
-	
-
