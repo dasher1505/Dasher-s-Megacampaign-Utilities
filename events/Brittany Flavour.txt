@@ -129,3 +129,129 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = breton.4
+	title = "claim_eng_t"
+	desc = "claim_eng_d"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BRI
+		total_development = 500
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "claim_eng_yes"
+		custom_tooltip = "claim_eng_yes_tooltip"
+		set_country_flag = england_claimed
+		add_prestige = 15
+		ENG = {
+			add_prestige = -15
+		}
+	}
+
+	option = {
+		name = "claim_eng_no"
+	}
+}
+
+country_event = {
+	id = breton.5
+	title = "attacking_eng_t"
+	desc = "attacking_eng_d"
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = england_claimed
+		tag = BRI
+		BRI = { war_with = ENG }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "bri_war_buff"
+		add_country_modifier = {
+			name = brittany_war_boost
+			duration = 1000
+		}
+	}
+}
+
+country_event = {
+	id = breton.6
+	title = "london_taken_t"
+	desc = "london_taken_d"
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = england_claimed
+		tag = BRI
+		BRI = { 
+			war_with = ENG
+			controls = 236 
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "seize_england"
+		custom_tooltip = "seize_england_tooltip"
+		BRI = {
+			add_country_modifier = {
+				name = brittany_convert_eng
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = england_claimed
+			set_global_flag = brittany_france_claim
+			BRI = {
+				capital_scope = {
+					add_random_development = 4
+					add_random_development = 4
+					add_random_development = 4
+				}
+				white_peace = ENG
+			}
+			ENG = {
+				every_owned_province = {
+					if = {
+						limit = {
+							region = british_isles_region
+						}
+						add_random_development = -1
+						add_core = BRI
+						cede_province = BRI
+						add_core = NRM
+					}
+					else_if = {
+						limit = {
+							OR = {
+								region = france_region
+								region = north_german_region
+							}
+						}
+						add_core = FRA
+					}
+				}
+				change_tag = NRM
+
+			}
+		}
+	}
+	option = {
+		name = "dont_seize"
+	}
+}
+
+
+
+

@@ -90,7 +90,7 @@ country_event = {
 			tag = FRA
 			tag = GUY
 		}
-		capital = 183
+		capital = 174
 	}
 	mean_time_to_happen = {
 		years = 10
@@ -100,6 +100,7 @@ country_event = {
 		name = "develop_guy_capital"
 		capital_scope = {
 			add_random_development = 15
+			change_trade_goods = paper
 		}
 	}
 }
@@ -132,6 +133,9 @@ country_event = {
 			mil = 5
 			age = 5
 		}
+		add_adm_power = 150
+		add_dip_power = 150
+		add_mil_power = 150
 	}
 	option = {
 		name = "decline_occitan_king"
@@ -166,5 +170,76 @@ country_event = {
 			siege = 4
 			trait = inspirational_leader_general_personality
 		}
+	}
+}
+
+country_event = {
+	id = occitania_rise.6
+	title = "claiming_normandy_t"
+	desc = "claiming_normandy_d"
+
+	trigger = {
+		tag = FRA
+		NRM = { exists = yes }
+		has_global_flag = brittany_france_claim
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "claim_normandy_yes"
+		NRM = {
+			every_owned_province = {
+				add_core = FRA
+			}
+		}
+		FRA = {
+			declare_war_with_cb = {
+				casus_belli = cb_restore_personal_union
+				who = NRM
+			}
+		}
+	}
+	option = {
+		name = "claim_normandy_no"
+		add_prestige = -10
+	}
+	
+}
+
+country_event = {
+	id = occitania_rise.7
+	title = "claiming_brittany_t"
+	desc = "claiming_brittany_d"
+
+	trigger = {
+		tag = FRA
+		NRM = { junior_union_with = FRA }
+		has_global_flag = brittany_france_claim
+	}
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	option = {
+		name = "claim_brittany_yes"
+		NRM = {
+			every_core_province = {
+				add_claim = FRA
+			}
+		}
+		inherit = NRM
+		brittany_area = {
+			add_core = FRA
+		}
+		wessex_area = {
+			add_core = FRA
+		}
+		set_country_flag = "brittany_claimed"
+	}
+	option = {
+		name = "claim_brittany_no"
+		add_prestige = -10
 	}
 }

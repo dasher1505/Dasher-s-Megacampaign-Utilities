@@ -18,6 +18,7 @@ country_event = {
 		name = "develop_tunis"
 		341 = {
 			add_random_development = 5
+			change_trade_goods = silk
 		}
 		4566 = {
 			add_random_development = 5
@@ -30,7 +31,7 @@ country_event = {
 		}
 		add_prestige = 25
 	}
-}`
+}
 
 country_event = {
 	id = tunis.2

@@ -17,3 +17,26 @@
  seize_wales:0 "Seize Wales!"
  dont_seize_wales:0 "We shall not risk it"
 
+ brittany_war_boost:0 "Celtic Fervour"
+ desc_brittany_war_boost:0 "Our soldiers, compelled by their love for King and Country, are willing to fight to the very end in our quest to reclaim the British isles we lost over a millenia ago!"
+
+ claim_eng_t:0 "Claim the English Crown"
+ claim_eng_d:0 "Our realm has grown powerful enough to challenge the English throne. With our strength, we may press a claim and assert our dominance over England."
+ claim_eng_yes:0 "Press our claim!"
+ claim_eng_yes_tooltip:0 "We will declare our intent to claim the English throne, gaining prestige but angering England. By attacking England and sieging their capital, we can assert our authority over their land."
+ claim_eng_no:0 "We are not ready."
+
+ attacking_eng_t:0 "War for England"
+ attacking_eng_d:0 "The time has come to enforce our claim. Our armies march against England to secure what is rightfully ours."
+ bri_war_buff:0 "For Brittany and the Crown!"
+
+ london_taken_t:0 "The fall of England?"
+ london_taken_d:0 "We've successfully seized the capital of England! With it, we have an easy way to affirm our hegemony over the Isles, and finally secure our rightful Celtic heritage!"
+ seize_england:0 "Seize the English Crown"
+ seize_england_tooltip:0 "England will be dismantled and its lands in Britain will be brought under our control."
+ dont_seize:0 "This is enough."
+
+
+ brittany_convert_eng:0 "Celtic Conversion Effort"
+ desc_brittany_convert_eng:0 "Conversion of the British Isles has been made easier thanks to concerted efforts by the Crown. Sooner or later, the Celts will be back home!"
+

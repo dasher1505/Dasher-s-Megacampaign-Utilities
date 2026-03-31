@@ -40,4 +40,17 @@
 
 
 
+ claiming_normandy_t:0 "The Norman Question"
+ claiming_normandy_d:0 "With the collapse of English authority and the rise of new powers across the Channel, Normandy stands vulnerable. As the rightful heirs to these lands, we may press our claim and bring Normandy back under the French crown."
+ claim_normandy_yes:0 "Reclaim Normandy!"
+
+ claiming_brittany_t:0 "The Fate of Brittany"
+ claiming_brittany_d:0 "With Normandy secured under our rule, the question of Brittany remains. With our subjugation of Normandy, we have inherited the claim they held over the entirety of England. It may not be entirely out of the picture to try conquer England for ourselves..."
+ claim_brittany_yes:0 "Claim Dominion over the Celts"
+ claim_brittany_no:0 "Let them remain, as is."
+
+ claim_normandy_no:0 "This all sounds a bit too hasty."
+
+
+
  
