@@ -1,0 +1,11 @@
+﻿l_english:
+ allow_form_francia_title:0 "Enable Francia"
+ allow_form_francia_desc:0 "This will allow you to form Francia when you meet the conditions."
+
+
+ elections_easier_title:0 "Secure Electoral Influence"
+ elections_easier_desc:0 "By leveraging diplomacy, influence, and internal reforms, we can greatly improve our chances of being favored in Imperial elections. Though such efforts may strain our resources, the rewards of securing the Imperial Crown are well worth the cost."
+ elections_easier_tooltip:0 "Gain permanent bonuses that make it easier to win elections within the Holy Roman Empire."
+
+ hungary_thurungia_noob_buffs:0 "Imperial Electoral Influence"
+ desc_hungary_thurungia_noob_buffs:0 "Through careful diplomacy, strategic alliances, and the cultivation of favor among the Prince-Electors, this nation has secured a strong position within the Holy Roman Empire’s electoral system."

@@ -1,0 +1,22 @@
+country_decisions = {
+	allow_form_francia = {
+		potential = {
+			ai = no
+			OR = {
+				tag = SAX
+				tag = THU
+			}
+			NOT = { has_country_flag = allowed_to_form_francia }
+		}
+		allow = {
+			OR = {
+				tag = SAX
+				tag = THU
+			}
+		}
+		effect = {
+			set_country_flag = can_form_francia
+			set_country_flag = allowed_to_form_francia
+		}
+	}
+}

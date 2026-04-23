@@ -194,7 +194,10 @@ country_event = {
 		has_country_flag = england_claimed
 		tag = BRI
 		BRI = { 
-			war_with = ENG
+			OR = {
+				war_with = ENG
+				war_with = GBR
+			}
 			controls = 236 
 		}
 	}
@@ -209,19 +212,26 @@ country_event = {
 				name = brittany_convert_eng
 				duration = -1
 			}
+			capital_scope = {
+				add_random_development = 4
+				add_random_development = 4
+				add_random_development = 4
+			}
 		}
 		hidden_effect = {
 			clr_country_flag = england_claimed
 			set_global_flag = brittany_france_claim
 			BRI = {
-				capital_scope = {
-					add_random_development = 4
-					add_random_development = 4
-					add_random_development = 4
-				}
 				white_peace = ENG
+				white_peace = GBR
 			}
-			ENG = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = GBR
+					}
+				}
 				every_owned_province = {
 					if = {
 						limit = {
@@ -243,7 +253,6 @@ country_event = {
 					}
 				}
 				change_tag = NRM
-
 			}
 		}
 	}

@@ -9,7 +9,7 @@ brittany_convert_eng = {
 	culture_conversion_time = -0.2
 }
 
-hungary_noob_buffs = {
+hungary_thurungia_noob_buffs = {
 	imperial_authority_value = 0.2
 	reasons_to_elect = 150
 }

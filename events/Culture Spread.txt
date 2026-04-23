@@ -28,8 +28,13 @@ province_event = {
 		controlled_by = owner
 
 		any_neighbor_province = {
-			owned_by = prev
-			has_owner_culture = yes
+			OR = {
+				AND = {
+					owned_by = prev
+					has_owner_culture = yes
+				}
+				owner = { is_colonial_nation = yes }
+			}
 		}
 
 		NOT = {

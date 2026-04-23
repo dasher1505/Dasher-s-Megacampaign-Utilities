@@ -82,6 +82,9 @@ country_event = {
 			persia_region = {
 				add_core = RUM
 			}
+			mashriq_region = {
+				add_core = RUM
+			}
 			anatolia_region = {
 				add_core = PER
 			}

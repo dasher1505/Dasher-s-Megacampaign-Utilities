@@ -1,0 +1,24 @@
+country_decisions = {
+	elections_easier = {
+		potential = {
+			OR = {
+				tag = THU
+				tag = HUN
+			}
+			NOT = { has_country_flag = hre_emp_buff }
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			ROOT = {
+				add_country_modifier = {
+					name = hungary_thurungia_noob_buffs
+					duration = -1
+				}
+				set_country_flag = hre_emp_buff
+			}
+		}
+	}
+
+}
