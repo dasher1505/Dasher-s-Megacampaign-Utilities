@@ -51,6 +51,12 @@
 
  claim_normandy_no:0 "This all sounds a bit too hasty."
 
+ print_money_t:0 "The Royal Mint Overflows"
+ print_money_d:0 "Our treasury advisors have proposed an unprecedented measure to curb our extreme debt crisis: ordering the royal mint to produce currency far beyond our usual means. The influx of coin would solve our immediate financial woes, but flooding the realm with new money risks devaluing our currency and stirring unrest among merchants and nobles alike. How shall we proceed, Your Majesty?"
+ print_money_super_yes:0 "Print without restraint! Fill the coffers to the brim! No more debt!"
+ print_money_yes:0 "We NEED more money, now! But show some restraint!"
+ print_money_no:0 "We must not debase our currency. Fiscal discipline above all. Debt is temporary, anyways."
+
 
 
  

@@ -178,6 +178,7 @@ country_event = {
 	title = "claiming_normandy_t"
 	desc = "claiming_normandy_d"
 
+	fire_only_once = yes
 	trigger = {
 		tag = FRA
 		NRM = { exists = yes }
@@ -212,6 +213,7 @@ country_event = {
 	id = occitania_rise.7
 	title = "claiming_brittany_t"
 	desc = "claiming_brittany_d"
+	fire_only_once = yes
 
 	trigger = {
 		tag = FRA
@@ -241,5 +243,41 @@ country_event = {
 	option = {
 		name = "claim_brittany_no"
 		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = occitania_rise.8
+	title = "print_money_t"
+	desc = "print_money_d"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
+		is_in_large_debt = yes
+	}
+	mean_time_to_happen = {
+		years = 5
+	}
+	option = {
+		name = "print_money_super_yes"
+		add_treasury = 10000
+		add_inflation = 250
+		add_prestige = -15
+	}
+
+	option = {
+		name = "print_money_yes"
+		add_treasury = 5000
+		add_inflation = 100
+	}
+	option = {
+		name = "print_money_no"
+		add_inflation = -15
+		add_prestige = 15
 	}
 }
